@@ -1,6 +1,4 @@
-﻿using System;
-using System.Drawing;
-using System.IO;
+﻿using System.Drawing;
 
 namespace UkrainianFlag
 {
@@ -28,11 +26,7 @@ namespace UkrainianFlag
                 }
             }
 
-            var saveDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "codegolf", "245318");
-            Directory.CreateDirectory(saveDir);
-
-            var file = Path.Combine(saveDir, "flag.bmp");
-            flag.Save(file);
+            flag.Save("flag.bmp");
         }
     }
 }
